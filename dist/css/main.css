@@ -1,0 +1,204 @@
+/* Global Styles */
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display:700,900");
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  background-color: #232a34;
+  color: #fff; }
+
+.header {
+  line-height: 1;
+  background-color: #1a212b; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display", Georgia, "Times New Roman", serif; }
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+
+.nav-scroller {
+  position: relative;
+  z-index: 2;
+  height: 2.75rem;
+  overflow-y: hidden; }
+  .nav-scroller .nav {
+    display: flex;
+    flex-wrap: nowrap;
+    padding-bottom: 1rem;
+    margin-top: -1px;
+    overflow-x: auto;
+    text-align: center;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch; }
+    .nav-scroller .nav .nav-link {
+      padding-top: .75rem;
+      padding-bottom: .75rem;
+      font-size: .875rem; }
+
+/* Buttons */
+.btn {
+  width: 154px;
+  height: 35px;
+  text-align: center;
+  padding: 0; }
+
+.btn, .btn-dropdown, .btn-dropdown[aria-expanded="true"].btn:hover, .btn:active, .btn:focus, .btnn-dropdown:hover, .btnn-dropdown:active, .btnn-dropdown:focus {
+  outline: none;
+  border: none; }
+
+.btn-dropdown {
+  background-color: #30373f;
+  color: #fff;
+  padding: 10px;
+  outline: none !important;
+  border: none !important; }
+
+.dropdown-menu {
+  top: 0 !important;
+  left: 40px !important;
+  min-width: 8rem; }
+
+.dropdown-item {
+  width: 126px !important; }
+
+.btn.btn-primary {
+  background-color: #22d56d; }
+
+nav .btn.btn-secondary.btn-lg.mr-2 {
+  background-color: #30373f; }
+
+/* Main Nav */
+.main-nav {
+  flex-flow: row nowrap !important;
+  justify-content: flex-start !important;
+  padding: 1rem 0; }
+  .main-nav .container {
+    padding: 0; }
+  .main-nav .partners-and-sponsors li.nav-item a.p-and-s {
+    width: 130px;
+    height: 40px;
+    font-size: 0.7rem; }
+    .main-nav .partners-and-sponsors li.nav-item a.p-and-s span {
+      border-right: 2px solid #303741; }
+  .main-nav .btn {
+    width: 145px;
+    height: 45px;
+    font-size: 1rem; }
+
+/* Sports Categories and Game Providers */
+.sports-categories, .game-providers {
+  scrollbar-width: thin;
+  scrollbar-color: #1a212b; }
+  .sports-categories::-webkit-scrollbar, .game-providers::-webkit-scrollbar {
+    width: 11px; }
+  .sports-categories::-webkit-scrollbar-track, .game-providers::-webkit-scrollbar-track {
+    background: #232a34; }
+  .sports-categories::-webkit-scrollbar-thumb, .game-providers::-webkit-scrollbar-thumb {
+    background-color: #1a212b;
+    border-radius: 6px;
+    border: 3px solid #1a212b; }
+
+/* Sports Categories Slider */
+.sports-categories {
+  height: 175px !important; }
+  .sports-categories p.heading {
+    margin: 0; }
+  .sports-categories p:not(.heading) {
+    margin-bottom: 0;
+    font-size: 0.75rem;
+    text-align: center;
+    color: #808e8e; }
+  .sports-categories nav {
+    margin-bottom: 1rem; }
+    .sports-categories nav li {
+      width: 60px;
+      height: 60px;
+      background: #1a212b; }
+      .sports-categories nav li a {
+        width: 60px;
+        height: 60px; }
+        .sports-categories nav li a img {
+          width: 24px;
+          height: 24px; }
+
+/* Game Providers Slider */
+.game-providers {
+  height: 150px !important; }
+  .game-providers li {
+    width: 175px;
+    height: 60px;
+    background: #fff; }
+    .game-providers li a {
+      width: 175px;
+      height: 60px; }
+      .game-providers li a img {
+        width: 58px;
+        height: 26px; }
+
+/* Cards */
+.secondary-cards {
+  margin-top: 2rem; }
+
+.col.secondary-card {
+  width: 560px;
+  height: 230px;
+  background: #1a212b; }
+
+.col-auto img {
+  width: 270px;
+  height: 230px; }
+
+.col.sports, .col.casino {
+  object-fit: cover;
+  width: 538px;
+  height: 248px; }
+
+.col.sports {
+  background: url("../img/sport-ball-football-team.jpg"); }
+
+.col.casino {
+  background: url("../img/ace-card-game-cards-casino.jpg"); }
+
+hr {
+  border-top: 2px solid #303741;
+  margin: 1rem 0;
+  width: 100%; }
+
+/* footer */
+footer nav ul {
+  color: #808e8e; }
+  footer nav ul a {
+    color: #808e8e;
+    text-decoration: none; }
+    footer nav ul a:hover, footer nav ul a:active, footer nav ul a:focus {
+      color: #fff;
+      text-decoration: none; }
+  footer nav ul .delasport-info {
+    width: 175px; }
+    footer nav ul .delasport-info a {
+      width: 175px;
+      height: 32px;
+      display: inline-block;
+      margin-bottom: 2rem; }
+    footer nav ul .delasport-info p {
+      font-size: 0.75rem; }
+  footer nav ul .slim {
+    width: 120px; }
+  footer nav ul .thick {
+    width: 235px; }
+    footer nav ul .thick li {
+      width: 42px;
+      height: 42px;
+      background: #2f363e; }
+      footer nav ul .thick li a {
+        width: 42px;
+        height: 42px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center; }
