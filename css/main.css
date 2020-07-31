@@ -107,21 +107,25 @@ nav .btn.btn-secondary.btn-lg.mr-2 {
 /* Sports Categories Slider */
 .sports-categories {
   height: 175px !important; }
-  .sports-categories p {
+  .sports-categories p.heading {
+    margin: 0; }
+  .sports-categories p:not(.heading) {
     margin-bottom: 0;
     font-size: 0.75rem;
     text-align: center;
     color: #808e8e; }
-  .sports-categories li {
-    width: 60px;
-    height: 60px;
-    background: #1a212b; }
-    .sports-categories li a {
+  .sports-categories nav {
+    margin-bottom: 1rem; }
+    .sports-categories nav li {
       width: 60px;
-      height: 60px; }
-      .sports-categories li a img {
-        width: 24px;
-        height: 24px; }
+      height: 60px;
+      background: #1a212b; }
+      .sports-categories nav li a {
+        width: 60px;
+        height: 60px; }
+        .sports-categories nav li a img {
+          width: 24px;
+          height: 24px; }
 
 /* Game Providers Slider */
 .game-providers {
@@ -138,7 +142,10 @@ nav .btn.btn-secondary.btn-lg.mr-2 {
         height: 26px; }
 
 /* Cards */
-.col.secondary-cards {
+.secondary-cards {
+  margin-top: 2rem; }
+
+.col.secondary-card {
   width: 560px;
   height: 230px;
   background: #1a212b; }
@@ -166,6 +173,12 @@ hr {
 /* footer */
 footer nav ul {
   color: #808e8e; }
+  footer nav ul a {
+    color: #808e8e;
+    text-decoration: none; }
+    footer nav ul a:hover, footer nav ul a:active, footer nav ul a:focus {
+      color: #fff;
+      text-decoration: none; }
   footer nav ul .delasport-info {
     width: 175px; }
     footer nav ul .delasport-info a {
